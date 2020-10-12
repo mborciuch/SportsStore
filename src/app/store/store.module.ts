@@ -4,11 +4,12 @@ import {BrowserModule} from '@angular/platform-browser';
 import {ModelModule} from '../model/model.module';
 import {StoreComponent} from './StoreComponent';
 import {CounterDirective} from './counter.directive';
+import {CartSummaryComponent} from './cartSummary.component';
 
 
 @NgModule({
   imports: [ModelModule, BrowserModule, FormsModule],
-  declarations: [StoreComponent, CounterDirective],
+  declarations: [StoreComponent, CounterDirective, CartSummaryComponent],
   exports: [StoreComponent]
 })
 export class StoreModule { }

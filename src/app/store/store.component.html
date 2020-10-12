@@ -4,11 +4,12 @@
       <a class="navbar-brand">
         SPORTS STORE
       </a>
+      <cart-summary></cart-summary>
     </div>
   </div>
   <div class="row">
     <div class="col-3 p-2">
-      <button class="bton btn-block btn-outline-primary" (click)="changeCategory()">
+      <button class="btn btn-block btn-outline-primary" (click)="changeCategory()">
         Home
       </button>
       <button *ngFor="let cat of categories" class="btn btn-outline-primary btn-block" [class.active]="cat == selectedCategory" (click) = "changeCategory(cat)">
@@ -23,7 +24,11 @@
           {{product.price | currency: "USD" : "symbol" : "2.2-2"}}
         </span>
       </h4>
-      <div class="card-text bg-white p-1">{{product.description}}</div>
+      <div class="card-text bg-white p-1">{{product.description}}
+      <button class="btn btn-success btn-sm float-right" (click)="addProductToCart(product)">
+        Add To cart
+      </button>
+      </div>
     </div>
       <div class="class form-inline float-left mr-1">
         <select class="class form-control" [value]="productsPerPage" (change)="changePageSize($event.target.value)">
