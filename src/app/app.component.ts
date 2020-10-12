@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app',
-  template: '<store></store>',
-  styleUrls: ['./app.component.css']
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
   title = 'SportsStore';
