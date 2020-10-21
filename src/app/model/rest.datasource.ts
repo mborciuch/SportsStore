@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {Order} from './order.model';
 import {Injectable} from '@angular/core';
 import {map} from 'rxjs/operators';
-import {applySourceSpanToExpressionIfNeeded} from '@angular/compiler/src/output/output_ast';
+import {environment} from '../../environments/environment';
 
 const PROTOCOL = 'http';
 const PORT = 3500;
@@ -16,7 +16,7 @@ export class RestDatasource {
   auth_token: string;
 
   constructor(private http: HttpClient) {
-    this.baseURL = `${PROTOCOL}://${location.hostname}:${PORT}/`;
+    this.baseURL = environment.apiUrl;
   }
 
   getProducts(): Observable<Product[]> {

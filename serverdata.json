@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "id": 6,
+      "name": "Thinking Cap",
+      "category": "Chess",
+      "description": "Improve brain efficiency by 75%",
+      "price": 16
+    },
+    {
+      "id": 7,
+      "name": "Unsteady Chair",
+      "category": "Chess",
+      "description": "Secretly give your opponent a disadvantage",
+      "price": 29.95
+    },
+    {
+      "id": 8,
+      "name": "Human Chess Board",
+      "category": "Chess",
+      "description": "A fun game for the family",
+      "price": 75
+    },
+    {
+      "id": 9,
+      "name": "Bling Bling King",
+      "category": "Chess",
+      "description": "Gold-plated, diamond-studded King",
+      "price": 1200
+    }
+  ],
+  "orders": []
+}
